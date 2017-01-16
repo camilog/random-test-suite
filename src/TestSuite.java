@@ -1,5 +1,6 @@
 import org.apache.commons.math3.distribution.ChiSquaredDistribution;
 import org.apache.commons.math3.distribution.NormalDistribution;
+import org.jetbrains.annotations.Contract;
 
 import java.util.*;
 import java.util.stream.IntStream;
@@ -423,6 +424,7 @@ public class TestSuite {
         return sum;
     }
 
+    @Contract(pure = true)
     private int xor(char b0, char b1) {
         if (b0 == b1) {
             return 0;
